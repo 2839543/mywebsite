@@ -1,0 +1,23 @@
+<!--头部-->
+<div class="top">
+  <div class="topc">
+    <div class="logo"><a href="/"><img src="/images1/logo.jpg" border="0" /></a></div>
+	<div class="logor">
+	  <div class="logort"><img src="/images1/tel.jpg" /></div>
+	  <div class="dh">
+	    <ul class="dhp">
+		<li><a href="/">首页<br><span>HOME</span></a></li>
+		<li>{dede:field.typeid runphp='yes' function="GetTopid(@me)"}if(@me=='1')@me='<a href="/about/" class="cur">';else@me='<a href="/about/">';{/dede:field.typeid}关于我们<br><span>ABOUT US</span></a></li>
+		<li>{dede:field.typeid runphp='yes' function="GetTopid(@me)"}if(@me=='2')@me='<a href="/case/" class="cur">';else@me='<a href="/case/">';{/dede:field.typeid}案例展示<br><span>CASE</span></a></li>
+<!--
+		<li>{dede:field.typeid runphp='yes' function="GetTopid(@me)"}if(@me=='3')@me='<a href="/designer/" class="cur">';else@me='<a href="/designer/">';{/dede:field.typeid}设计团队<br><span>DESIGNER</span></a></li>
+-->
+		<li>{dede:field.typeid runphp='yes' function="GetTopid(@me)"}if(@me=='4')@me='<a href="/services/" class="cur">';else@me='<a href="/services/">';{/dede:field.typeid}服务范围<br><span>SERVICES</span></a></li>
+		<li>{dede:field.typeid runphp='yes' function="GetTopid(@me)"}if(@me=='5')@me='<a href="/knowledge/" class="cur">';else@me='<a href="/knowledge/">';{/dede:field.typeid}装修知识<br><span>KNOWLEDGE</span></a></li>
+		<li>{dede:field.typeid runphp='yes' function="GetTopid(@me)"}if(@me=='6')@me='<a href="/news/" class="cur">';else@me='<a href="/news/">';{/dede:field.typeid}新闻资讯<br><span>NEWS</span></a></li>
+		<li>{dede:field.typeid runphp='yes' function="GetTopid(@me)"}if(@me=='7')@me='<a href="/contact/" class="cur">';else@me='<a href="/contact/">';{/dede:field.typeid}联系我们<br><span>CONTACT</span></a></li>
+		</ul>
+	  </div>
+	</div>
+  </div>
+</div>

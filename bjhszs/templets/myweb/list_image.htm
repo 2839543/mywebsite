@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<META content="IE=7.0000" http-equiv="X-UA-Compatible">
+<link rel="stylesheet" type="text/css" href="/css/webcss.css" />
+</head>
+<body>
+{dede:include filename="head.htm"/}
+{dede:include filename="inside_nyb.htm"/}
+<div class="ny">
+  <div class="nyl">
+    <div class="nyltop">
+	  <div class="nyltpl">{dede:field name='typename'/}</div>
+	  <div class="nyltpr">您当前位置：{dede:field name='position'/}列表</div>
+	</div>
+	<div class="nylbai">
+	  <div class="nylcp">
+	    <ul>
+		  {dede:list pagesize='12' titlelen='35'}
+		  <li>
+		    <div class="pp" onMouseOver="this.className='pp1'" onMouseOut="this.className='pp'"><a href="[field:arcurl/]" title="[field:fulltitle function='htmlspecialchars(@me)'/]"><img src="[field:litpic/]" alt="[field:title function='html2text(@me)'/]"/></a></div>
+			<div class="pf" onMouseOver="this.className='pf1'" onMouseOut="this.className='pf'"><a href="[field:arcurl/]" title="[field:fulltitle function='htmlspecialchars(@me)'/]"><span>[field:title/]</span></a></div>
+		  </li>
+		  {/dede:list}
+		</ul>
+	  </div>
+	  <div class="MyPage">
+	    {dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="2"/}
+	  </div>
+	</div>
+  </div>
+  <div class="nyr">
+    {dede:include filename="inside_right.htm"/}
+  </div>
+</div>
+{dede:include filename="foot.htm"/}
+</body>
+</html>

@@ -1,0 +1,15 @@
+<div class="nystop">
+  <div class="nystp"><span>{dede:field.typeid runphp='yes' function="GetTopid(@me)"}if(@me=='1')@me='ABOUT US';else if(@me=='2')@me='CASE';else if(@me=='3')@me='DESIGNER';else if(@me=='4')@me='SERVICES';else if(@me=='5')@me='KNOWLEDGE';else if(@me=='6')@me='NEWS';else if(@me=='7')@me='CONTACT';else if(@me=='12')@me='DYNAMIC';{/dede:field.typeid}</span>{dede:field name='typeid' function="GetTopTypename(@me)" /}</div>
+</div>
+<div class="nysbai">
+  <div class="rf1">
+  {dede:channel type='son' currentstyle="<a href='~typelink~' class='cur'>~typename~</a>"}
+  <a href='[field:typeurl/]'>[field:typename/]</a>
+  {/dede:channel}
+  </div>
+</div>
+<div class="nycont"><img src="/images1/nycon.jpg" /></div>
+<div class="nyconp"><img src="/images1/nyqq.jpg" /></div>
+<div class="nyconc">
+  <div class="nyconcp">{dede:global.dede_pcontact/}</div>
+</div>
