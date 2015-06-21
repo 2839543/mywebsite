@@ -1,0 +1,41 @@
+/** forum::index **/
+#chart { margin: 10px 0 0; }
+
+body,input,button,select,textarea{font:12px/1.5 "微软雅黑",'Microsoft Yahei','Simsun';color:#444;}
+textarea{resize:none;}
+
+a{color:#333;text-decoration:none;}
+a:hover{text-decoration:underline;}
+a img{border:none;}label{cursor:pointer;}
+
+.cl{zoom:1;}
+
+.cls:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+
+.switch-fade{position:relative;}
+.switch-fade .switch-content li{position:absolute;top:5px;left:5px;display:block;filter:alpha(opacity=0);opacity:0;}.
+share-tops{margin-bottom:10px}
+.share-item,.share-hot-item{background:#fff;border:1px solid #EBEBEB;border-radius:0 0 1px 1px;}
+.share-item{float:left;width:680px;height:268px;padding:5px}
+.share-item .share-items-hd{width:680px;height:188px;margin-bottom:5px;overflow:hidden}
+.share-item .share-items-hd li{float:left}.share-item .share-items-hd li img{display:block;width:680px;height:188px}
+.share-item .share-items-bd{position:relative}
+.share-item .share-items-bd .share-items-list{width:680px;overflow:hidden}
+.share-item .share-items-bd .share-items-list ul{width:984px}
+.share-item .share-items-bd .share-items-list li{float:left;width:128px;margin-right:5px;overflow:hidden;background:#fff;text-align:center}
+.share-item .share-items-bd .share-items-list li a{color:#666;text-decoration:none;cursor:pointer}
+.share-item .share-items-bd .share-items-list li .pic{width:128px;height:40px;overflow:hidden}
+.share-item .share-items-bd .share-items-list li img{display:block;width:128px;height:40px}
+.share-item .share-items-bd .share-items-list li p{height:20px;line-height:20px;padding:6px 5px 0;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.share-item .share-items-bd .share-items-list li .pic{display:block;border-bottom:2px solid #fff}
+.share-item .share-items-bd .share-items-list li.selected .pic{border-bottom-color:#66ccbb}
+.share-item .share-items-bd .share-items-list li.selected p{color:#0094ff}
+.share-hot-item{float:right;width:280px;height:278px}
+.share-hot-item .item-hd{padding:10px 20px;}
+.share-hot-item .item-hd h4{float:left;font:bold 18px/25px "Microsoft Yahei";color:#333}
+.share-hot-item .item-bd{padding:0 20px}.share-hot-item .item-bd ul{overflow:hidden}
+.share-hot-item .item-bd{ margin-top:20px;}
+.share-hot-item .item-bd li{width:100%;margin-top:-1px;padding:7px 0;border-top:1px solid #edf0eb;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.share-hot-item .item-bd li a{color:#666; text-decoration:none;}
+.share-hot-item .item-bd li a:hover{color:#0094ff;}
+/** end **/

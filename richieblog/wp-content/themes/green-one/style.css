@@ -1,0 +1,233 @@
+/*
+Theme Name: Green One
+Author URI: http://kwatery-prywatne.pl/
+Theme URI:
+Description: Elegant theme with modern green menu. Theme has got widgetized sidebar.
+Author: Kwatery Prywatne
+Version: 1.1
+Tags: green, blue, white, light, two-columns, fixed-width, editor-style
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* Reset browser styles
+------------------------------------------ */
+* {margin: 0; padding: 0;}
+html {padding-bottom: 1px; overflow: scroll;}
+body {background: #fff; color: #666; font: 0.75em/1.5em Arial,Helvetica,sans-serif;}
+[class] {list-style: none; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-size: 1em;}
+dt {font-weight: 700;}
+table {border-collapse: collapse;}
+img {border: none; vertical-align: middle;}
+a {color: #2998f6; text-decoration: none; cursor: pointer;}
+a:hover {color: #666; text-decoration: underline;}
+textarea, input, select, option, optgroup, button {font: 1em Arial,Helvetica,sans-serif;}
+button, input[type="submit"], input[type="button"], input[type="reset"] {cursor: pointer;}
+fieldset {overflow: hidden; border: none;}
+legend {display: none;}
+
+
+/* Custom fonts
+------------------------------------------ */
+@font-face {font-family: 'PTSans'; src: url('fonts/pts55f-webfont.eot'); src: url('fonts/pts55f-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/pts55f-webfont.woff') format('woff'), url('fonts/pts55f-webfont.ttf') format('truetype'), url('fonts/pts55f-webfont.svg#PTSansRegular') format('svg'); font-weight: normal; font-style: normal;}
+@font-face {font-family: 'PTSansBold'; src: url('fonts/pts75f-webfont.eot'); src: url('fonts/pts75f-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/pts75f-webfont.woff') format('woff'), url('fonts/pts75f-webfont.ttf') format('truetype'), url('fonts/pts75f-webfont.svg#PTSansBold') format('svg'); font-weight: normal; font-style: normal;}
+
+/* Global Styles
+------------------------------------------ */
+body {background: #e1dcce url("images/bg.png") top repeat-x; }
+h1 {margin-bottom: 1em; padding-bottom: 5px; background: url("images/title.png") 0 bottom no-repeat; color: #666; font: normal 2em PTSansBold,sans-serif;}
+h2 {clear: left; margin: 0 0 1em; padding-top: 20px; padding-bottom: 10px; background: url("images/title.png") 0 bottom no-repeat; color: #666; font: normal 1.667em PTSansBold,sans-serif;}
+h3 {clear: left; margin: 0 0 1.5em; padding-top: 20px; padding-bottom: 5px; background: url("images/title.png") 0 bottom no-repeat; color: #666; font: normal 1.417em PTSansBold,sans-serif;}
+h4 {margin: 1.5em 0 0.5em; color: #666; font: normal 1.083em PTSansBold,sans-serif;}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {font-family: PTSansBold,sans-serif;}
+blockquote {margin: 1.5em 0; padding: 10px 20px; border: 1px solid #d9d9d9; background: #f8f8f8; font-style: italic;}
+sub, sup {line-height: 1em;}
+ul li, ol li {margin: 5px 20px;}
+dl {overflow: hidden; margin: 1em 0; }
+dt {float: left; clear: left; width: 150px; margin: 0 0 1em; padding: 0; font-weight: bold;}
+dd {width: 500px; margin: 0 0 1em 150px; }
+p {margin: 1em 0;}
+table {margin: 1em auto; border: 1px solid #d9d9d9;}
+table th, table th[class] {padding: 5px 10px; border: 1px solid #d9d9d9; background: #eef4f8;}
+table td, table td[class] {padding: 5px 10px; border: 1px solid #d9d9d9;}
+table tr.alternate td {background: #f8f8f8;}
+
+form, form[class] {margin: 1.5em 0; padding: 10px 20px; border: 1px solid #bed5e1; background: #f8f8f8;;}
+fieldset {border: none;}
+label {float: left; width: 120px; margin: 0; color: #757b80; font-size: 0.917em; text-transform: uppercase; letter-spacing: 1px;}
+label.textarea {width: auto; margin-bottom: 5px;}
+input, textarea, select {width: 150px; margin: 0; padding: 2px; border: 1px solid #a8aeb3; background: #fff url("images/input.png") top repeat-x;}
+textarea {clear: left; width: 95%; height: 100px; margin-left: 0; margin-top: 0;}
+input[type="checkbox"], input[type="radio"] {width: auto; border: none;}
+p.form-submit, p.form-allowed-tags {margin-left: 120px;}
+button, input[type="submit"], button[type="submit"] {border: none; color: #fff; font: normal 1.167em/31px PTSansBold,sans-serif; text-transform: uppercase; text-align: center; text-shadow: #105ea1 0 0 2px; cursor: pointer; }
+
+/* Main Layout
+------------------------------------------ */
+.root {width: 960px; margin: 10px auto; border: 6px solid #014e8f; border-width: 6px 0; background: #fff; -moz-box-shadow:0 0 10px #999; -webkit-box-shadow:0 0 10px #999; box-shadow:0 0 10px #999;}
+.header {overflow: hidden; width: 960px; margin: 0 auto; padding: 0; background: #fff url("images/bg-header.png") top repeat-x;}
+.header p {float: left; margin: 20px 0; padding: 0;}
+.header p.logo {max-width: 350px; margin-left: 20px; padding-right: 27px;}
+.header p.logo a {color: #666; font: normal 1.833em/42px PTSansBold,sans-serif; text-decoration: none;}
+.header p.logo a:hover {color: #014e8f;}
+.header p.tagline {max-width: 300px; padding: 10px 0 10px 27px; border-left: 1px solid #cdd0d2; font: normal 1em/1.5em PTSans,sans-serif; text-transform: uppercase; letter-spacing: 2px;}
+
+.header form {float: right; width: 215px; margin: 25px 20px 25px 0; padding: 0; border: none; background: none; text-align: right;}
+
+.nav {width: 980px; margin: 0 0 -10px -10px; padding: 0 0 10px; background: url("images/mm.png") bottom no-repeat;}
+.nav>div {padding: 0 10px; background: #7fc52e url("images/mm-bg.png") bottom repeat-x;}
+.nav ul.menu {list-style: none; margin: 0; padding: 0;}
+.nav ul.menu>li {float: left; position: relative; overflow: hidden; margin: 0 0 -5px; padding: 0 0 0 2px; background: url("images/mm-separator.png") 0 2px no-repeat;}
+.nav ul.menu>li:first-child {padding-left: 0; background: none;}
+.nav ul.menu>li:hover {overflow: visible; z-index: 50; margin-bottom: -7px;}
+.nav ul.menu>li>a {float: left; position: relative; top: -1px; z-index: 5; height: 33px; padding: 2px 15px 6px; background: url("images/mm-hover.png") center -50px no-repeat; color: #fff; font: normal 1.167em/33px PTSansBold,sans-serif; text-decoration: none; text-transform: uppercase; text-shadow: #4e781c 0 0 2px;}
+.nav ul.menu>li>a:hover, .nav ul.menu>li:hover>a, .nav ul.menu>li.current-menu-item>a, .nav ul.menu>li.current_page_item>a {background-position: center 0; text-shadow: #255e8e 0 0 2px;}
+
+ul.menu ul {display: none; position: absolute; left: 1px; top: 35px; z-index: 1; list-style: none; width: 200px; margin: 0; padding: 0; border: 1px solid #a2cd6f; border-width: 1px 1px 0; }
+ul.menu ul li {position: relative; overflow: hidden; margin: 0; padding: 0;}
+ul.menu ul li:hover {overflow: visible;}
+ul.menu li:hover>ul {display: block}
+ul.menu ul li a {display: block; padding: 3px 15px; border-bottom: 1px solid #a2cd6f; background: #73b12a; color: #fff; font-size: 1em; font-family: PTSansBold,sans-serif; text-transform: uppercase; text-shadow: #4e781c 0 0 2px;}
+ul.menu ul li a:hover, ul.menu ul li:hover>a {background: #2e9af6; color: #fff; text-decoration: none; text-shadow: #255e8e 0 0 2px;}
+ul.menu ul ul {left: 200px; top: 0;}
+
+.content {width: 960px; padding: 20px 0; background: #fff;}
+
+.main {float: left; width: 605px; margin-bottom: 20px; padding-left: 20px;}
+.sidebar {float: right; width: 293px; margin-bottom: 20px; padding: 7px 20px 0 0;}
+
+.banner {clear: both; width: 920px; margin: 30px -10px -10px; padding: 5px 30px 10px; background: url("images/banner.png") center bottom no-repeat;}
+.banner p {margin: 0; color: #fff; font: normal 1.25em/1.5em PTSans,sans-serif; text-align: center; text-shadow: #4e781c 0 0 2px;}
+.banner p strong {font-family: PTSansBold,sans-serif;}
+
+.footer {clear: both; margin: 0; padding: 5px 20px 5px; border-bottom: 1px solid #fff; background: #e8e8e8 url("images/bg-footer.png") top repeat-x; }
+.footer p {margin: 1.5em 0; color: #a7a7a7; text-align: center; }
+.footer p strong {color: #666;}
+.footer p {margin-top: 2.5em; color: #666;}
+.footer p span {padding: 1em 1em 0; background: url("images/footer-separator.png") top repeat-x; color: #666;}
+.footer a {padding: 0 5px; color: #1f6dae;}
+.footer ul {padding-top: 15px; line-height: 2em; text-align: center;}
+.footer ul.menu li {display: inline; margin: 0; padding: 0 10px; border-left: 1px solid #ccc;}
+.footer ul.menu li:first-child {border-left: none;}
+
+/* general
+------------------------------------------ */
+form.searchform input {width: 160px; margin: 0 -1px 0 0; padding: 5px 10px; vertical-align: top; }
+form.searchform button {width: 37px; height: 33px; margin: -3px 0 0 -5px; padding: 0 0 4px 4px; border: none; background: url("images/search-button.png") 0 0 no-repeat; vertical-align: top;}
+
+.main form {padding: 15px 15px 0; border: none; background: #eaf4fe;}
+.main form span.required {padding-right: 0 10px; color: #c00; font-weight: bold; font-size: 1.333em;}
+.main form label+span.required {float: left;}
+.main form.searchform input {width: 300px;}
+.main form input[type="submit"] {position: relative; top: 5px;}
+.main label {float: none;}
+
+/* sidebar
+------------------------------------------ */
+.widget {margin-bottom: 2em;}
+.widget h3 {margin-top: 0; padding-top: 0;}
+.widget select {width: 270px; margin: 5px 0;}
+.widget ul {list-style: none; margin-top: -1px; padding: 0;}
+.widget ul li {margin: 0; padding: 5px 0; border-top: 1px solid #c4d6e5; background-color: #fff; }
+.widget ul li {padding-left: 15px; background: url("images/arrow1.gif") 0 10px no-repeat; }
+.widget ul ul {margin: 5px 0 -5px;}
+.widget ul ul li {background: url("images/arrow2.gif") 0 10px no-repeat; }
+.widget ul ul ul li {background: url("images/arrow3.gif") 0 10px no-repeat; }
+.widget ul li a:hover {color: #014e8f;}
+.widget ul li a:visited, .widget .tagcloud a:visited {color: #014E8F;}
+.widget ul>li.current-menu-item>a, .widget ul>li.current_page_item>a, .widget ul>li.current-cat>a {color: #000; font-weight: bold;}
+
+.sidebar form {width: 290px; margin: 15px 0 0; padding: 0; border: none; background: none; }
+.sidebar form.searchform input {width: 230px;}
+
+/* post styles
+------------------------------------------ */
+div.post, div.page {clear: both; margin: 0 0 20px; padding: 0;}
+div.post h2, div.page h2 {margin: 0 0 15px; padding: 0;}
+div.post h2 a, div.page h2 a {color: #666; font-family: PTSansBold,sans-serif;}
+div.post h2 a:hover, div.page h2 a:hover {color: #2998f6; text-decoration: none;}
+div.post.sticky {border-top-color: #d40000;}
+p.post-meta {margin-top: -1em; color: #999; font-size: 0.917em; line-height: 22px;}
+p.post-meta span {padding: 3px 0 3px 30px; background: url("images/icons.png") no-repeat; color: #999; line-height: 20px;}
+p.post-meta span.date {background-position: 5px 0;}
+p.post-meta span.author {background-position: 5px -20px;}
+p.post-meta span.cats {background-position: 5px -40px;}
+p.post-meta span.comments {background-position: 5px -60px;}
+p.post-meta a {color: #888;}
+p.post-meta a:hover {color: #0069a0; text-decoration: none;}
+p.tags {float: right; margin: 0;}
+p.tags span {padding: 3px 0 3px 25px; background: url("images/icons.png") 0 -80px no-repeat; color: #888;}
+p.tags a {color: #888;}
+p.tags a:hover {color: #0069a0; text-decoration: none;}
+p.more {float: left; clear: left;  overflow: hidden; margin: 0 0 20px -25px;}
+p.more a {float: left; padding: 0 25px 5px 10px; background: url("images/more-left.png") right bottom no-repeat; color: #1f6dae; font-family: PTSans, sans-serif; line-height: 20px; text-decoration: none; text-transform: uppercase; text-shadow: #f0f0f0 1px 1px 2px;}
+p.more a:hover {color: #000;}
+.post img.attachment-post-thumbnail {float: left; margin: 10px 10px 10px 0;}
+
+/* comments
+------------------------------------------ */
+.comments {clear: both;}
+.commentlist {margin: 1em 0;}
+.commentlist li {overflow: hidden; margin: 0 0 15px; padding: 5px 15px 1px; background: #dfeffd url("images/bg-comment.png") top no-repeat;}
+.commentlist li li {clear: both; margin-left: 20px; background: #fff;}
+.commentlist li p {margin: 1em 0;}
+.commentlist ul {clear: both;}
+.avatar, .says {display: none;}
+.comments li form, .comments li form[class] {background: #fff;}
+.reply {float: right; overflow: hidden; }
+.reply a {float: right; margin-bottom: 10px; padding-left: 30px; background: url("images/icons.png") 5px -160px no-repeat;}
+.commentlist li .comment-body ul {margin: 1em 0; list-style: disc;}
+.commentlist li .comment-body ol {margin: 1em 0; list-style: decimal;}
+.commentlist li .comment-body li {overflow: visible; margin: 0 0 0 20px; padding: 0; border: none; background: transparent;}
+.comment-meta, .comment-author, .comment-author-vcard {display: inline; font-size: 0.917em;}
+.comment-author cite {font-weight: bold; font-style: normal;}
+#respond {margin-left: -30px; padding-bottom: 10px; background: url("images/bg-commentform.png") left bottom no-repeat;}
+#respond form, #respond form[class] {margin-bottom: -10px; padding-left: 30px; padding-bottom: 0; background: #eaf4fe;}
+.commentlist li #respond {margin-left: 0; background: none;}
+.commentlist li #respond form, .commentlist li #respond form[class] {margin: 0 0 -10px; padding-left: 30px; padding-bottom: 0; background: #fff;}
+#respond form label {float: left; clear: left;}
+#respond form input {width: 250px;}
+#respond form input[type="submit"] {width: 147px; margin-left: 0; }
+#respond h3 {margin-top: 0; margin-left: 30px; padding-bottom: 0; background: none; color: #757b80;}
+.main form button[type="submit"], .main input[type="submit"] {position: relative; top: 3px; width: 147px; height: 31px; padding-left: 5px; border: none; background: url("images/comment-button.png") 0 0 no-repeat;}
+
+/* misc
+------------------------------------------ */
+.main form.searchform {padding-bottom: 10px;}
+.main form.searchform button {position:static; width: 37px; height: 33px; margin: -3px 0 0 -5px; padding: 0 0 4px 4px; border: none; background: url("images/search-button.png") 0 0 no-repeat; vertical-align: top;}
+
+.clear {height: 0; margin: 0; padding: 0; clear: both; float: none; overflow: hidden; border: none;}
+.alignleft {float: left; margin: 5px 20px 5px 0; padding: 0; }
+.alignright {float: right; margin: 5px 0 5px 20px; padding: 0; }
+.aligncenter {display: block; margin: 1em auto; text-align: center;}
+.wp-caption-text {margin: 0.5em 0 0; color: #777; font-size: 0.917em;}
+.nocomments {clear: both;}
+img.size-thumbnail {margin: 5px;}
+a.post-edit-link {font-size: 0.5em;}
+img {margin: 0; max-width: 605px; height: auto;}
+embed {max-width: 605px;}
+.wp-caption img, .wp-caption embed {max-width: 595px;}
+
+.gallery {overflow: hidden; padding: 1.5em 0;}
+.gallery dl {text-align: center;}
+.gallery dl dt {float: none; width: auto;}
+.gallery dl dd {clear: left; width: auto; margin: 0; text-align: center;}
+.gallery a img, .gallery a img[class] {padding: 2px; border: 1px solid #d6e5ee !important; background: transparent;}
+[id*="gallery"] img {padding: 2px; border: 1px solid #d6e5ee;}
+.gallery a:hover img, .gallery a:hover img[class] {border-color: #014e8f !important;}
+
+.wp-caption {max-width: 595px;}
+.wp-caption, .gallery-caption {padding: 10px 5px 5px; border: 1px solid #d9d9d9; background: #f8f8f8; text-align: center;}
+
+p.pagination {overflow: hidden;}
+p.pagination a {height: 22px; background: url("images/icons.png") no-repeat; font: normal 1.083em/22px "PTSansBold",sans-serif;}
+p.pagination a:hover {color: #000; text-decoration: none;}
+p.pagination .prev a {float: left; padding: 0 0 0 25px; background-position: 0 -140px;  }
+p.pagination .next a {float: right; padding: 0 25px 0 0; background-position: 100% -120px;}
+p.pages {clear: both;}
+
+p label {display: inline; margin-bottom: 0;}
+p.comment-form-comment label {display: block; float: left;}
+.gallery-caption {position: static;}
+.bypostauthor {position: static;}
