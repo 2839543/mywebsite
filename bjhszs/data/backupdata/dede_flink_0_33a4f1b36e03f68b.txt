@@ -1,0 +1,2 @@
+INSERT INTO `dede_flink` VALUES('12','1','http://www.hxkj.cc','网站建设','网站建设','','','1379405189','1','2');
+INSERT INTO `dede_flink` VALUES('13','1','http://www.hxkj.cc','易典传媒','','','','1379405203','1','2');
