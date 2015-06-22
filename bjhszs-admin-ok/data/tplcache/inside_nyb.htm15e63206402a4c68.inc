@@ -1,0 +1,8 @@
+<?php
+$z[0]=Array("field","if(@me=='1')@me='<span>A</span>BOUT US';else if(@me=='2')@me='<span>C</span>ASE';else if(@me=='3')@me='<span>D</span>ESIGNER';else if(@me=='4')@me='<span>S</span>ERVICES';else if(@me=='5')@me='<span>K</span>NOWLEDGE';else if(@me=='6')@me='<span>N</span>EWS';else if(@me=='7')@me='<span>C</span>ONTACT';else if(@me=='12')@me='<span>D</span>YNAMIC';",65,490);
+$z[0][4]['name']="typeid";
+$z[0][4]['runphp']="yes";
+$z[0][4]['function']="GetTopid(@me)";
+$z[0][4]['/']="";
+
+?>
