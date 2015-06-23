@@ -1,11 +1,11 @@
 <?php
-$cfg_basehost = 'http://www.hdhszs.com';
+$cfg_basehost = 'http://www.bjhszs.cn';
 $cfg_cmspath = '';
-$cfg_cookie_encode = 'nLGdR0AWW0y4fQDtRIBlPWSVRba9S4';
+$cfg_cookie_encode = 'HxAdYbBASB1MuT7MVSCAcaQSxXpSIT';
 $cfg_indexurl = '/';
 $cfg_backup_dir = 'backupdata';
 $cfg_indexname = '首页';
-$cfg_webname = '邯郸华帅装修工程有限公司|邯郸装修公司';
+$cfg_webname = '弘盛建筑装饰工程有限公司—弘盛建筑装饰工程有限公司|北京，燕郊，香河装修公司';
 $cfg_adminemail = 'admin@ccl.com';
 $cfg_html_editor = 'ckeditor';
 $cfg_arcdir = '';
@@ -98,8 +98,8 @@ $cfg_upload_switch = 'Y';
 $cfg_allsearch_limit = '1';
 $cfg_rewrite = 'N';
 $cfg_delete = 'Y';
-$cfg_keywords = '华帅装修工程有限公司,华帅装修,邯郸装修公司,邯郸家装公司,邯郸装饰,邯郸装修,邯郸装修设计';
-$cfg_description = '邯郸华帅装饰工程有限公司是一家专业从事家装、工装为一体的装修公司，多年来我们凭着"质量重于价格"的宗旨，为每一位装修者提供最满意的服务。华帅装饰工程有限公司为你提供邯郸地区的装修服务，热忱欢迎您的来电！';
+$cfg_keywords = '弘盛建筑装饰工程有限公司,弘盛装修,北京装修公司,北京家装公司,北京装饰,北京装修,北京装修设计';
+$cfg_description = '北京弘盛建筑装饰工程有限公司是一家专业从事家装、工装为一体的装修公司，多年来我们凭着"质量重于价格"的宗旨，为每一位装修者提供最满意的服务。北京弘盛建筑装饰工程有限公司为你提供邯郸地区的装修服务，热忱欢迎您的来电！';
 $cfg_beian = '';
 $cfg_need_typeid2 = 'Y';
 $cfg_cache_type = 'id';
@@ -151,6 +151,6 @@ $cfg_memcache_mc_oth = '';
 $cfg_cross_sectypeid = 'N';
 $cfg_digg_update = 0;
 $cfg_feedback_guest = 'N';
-$dede_powerby = 'COPYRIGHT @ 2007-2013 华帅装饰工程有限公司 , 冀ICP备11014979号 , 技术支持：慧学科技';
-$dede_pcontact = '公司名称：邯郸华帅装饰工程有限公司<br />办公电话：0310-8133888<br />传　　真：0310-8133888<br />邮　　箱：server@hdhszs.com<br />地　　址：邯郸市丛台区丛台路与东柳大街交叉口中道国际广场A座2001室';
+$dede_powerby = 'COPYRIGHT @ 2014-2016 北京弘盛建筑装饰工程有限公司 , 冀ICP备11014979号 。';
+$dede_pcontact = '公司名称：弘盛建筑装饰工程有限公司<br />办公电话：13552376046<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; qq：2246191803<br />邮　　箱：server@bjhszs.cn<br />地　　址：北京市海淀区蓝景丽家大钟寺家居广场';
 ?>
