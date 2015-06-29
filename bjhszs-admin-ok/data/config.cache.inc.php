@@ -151,6 +151,6 @@ $cfg_memcache_mc_oth = '';
 $cfg_cross_sectypeid = 'N';
 $cfg_digg_update = 0;
 $cfg_feedback_guest = 'N';
-$dede_powerby = 'COPYRIGHT @ 2014-2016 北京弘盛建筑装饰工程有限公司 , 冀ICP备11014979号 。';
+$dede_powerby = 'COPYRIGHT @ 2014-2016 北京弘盛建筑装饰工程有限公司 , 冀ICP备11014979号 。<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id=cnzz_stat_icon_1254451780%3E%3C/span%3E%3Cscript src=" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1254451780%26show%3Dpic1 type=text/javascript%3E%3C/script%3E"));</script>';
 $dede_pcontact = '公司名称：弘盛建筑装饰工程有限公司<br />办公电话：13552376046<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; qq：2246191803<br />邮　　箱：server@bjhszs.cn<br />地　　址：北京市海淀区蓝景丽家大钟寺家居广场';
 ?>
