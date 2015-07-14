@@ -60,6 +60,13 @@ function helper($helpers)
     }
 }
 
+function dede_htmlspecialchars($str) {
+    global $cfg_soft_lang;
+    if (version_compare(PHP_VERSION, '5.4.0', '<')) return htmlspecialchars($str);
+    if ($cfg_soft_lang=='gb2312') return htmlspecialchars($str,ENT_COMPAT,'ISO-8859-1');
+    else return htmlspecialchars($str);
+}
+
 /**
  *  控制器调用函数
  *
